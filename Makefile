@@ -99,24 +99,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named camcv1
+# Target rules for targets named camcv_vid1
 
 # Build rule for target.
-camcv1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 camcv1
-.PHONY : camcv1
+camcv_vid1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camcv_vid1
+.PHONY : camcv_vid1
 
 # fast build rule for target.
-camcv1/fast:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/build
-.PHONY : camcv1/fast
+camcv_vid1/fast:
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/build
+.PHONY : camcv_vid1/fast
 
 RaspiCLI.o: RaspiCLI.c.o
 .PHONY : RaspiCLI.o
 
 # target to build an object file
 RaspiCLI.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiCLI.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiCLI.c.o
 .PHONY : RaspiCLI.c.o
 
 RaspiCLI.i: RaspiCLI.c.i
@@ -124,7 +124,7 @@ RaspiCLI.i: RaspiCLI.c.i
 
 # target to preprocess a source file
 RaspiCLI.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiCLI.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiCLI.c.i
 .PHONY : RaspiCLI.c.i
 
 RaspiCLI.s: RaspiCLI.c.s
@@ -132,7 +132,7 @@ RaspiCLI.s: RaspiCLI.c.s
 
 # target to generate assembly for a file
 RaspiCLI.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiCLI.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiCLI.c.s
 .PHONY : RaspiCLI.c.s
 
 RaspiCamControl.o: RaspiCamControl.c.o
@@ -140,7 +140,7 @@ RaspiCamControl.o: RaspiCamControl.c.o
 
 # target to build an object file
 RaspiCamControl.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiCamControl.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiCamControl.c.o
 .PHONY : RaspiCamControl.c.o
 
 RaspiCamControl.i: RaspiCamControl.c.i
@@ -148,7 +148,7 @@ RaspiCamControl.i: RaspiCamControl.c.i
 
 # target to preprocess a source file
 RaspiCamControl.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiCamControl.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiCamControl.c.i
 .PHONY : RaspiCamControl.c.i
 
 RaspiCamControl.s: RaspiCamControl.c.s
@@ -156,7 +156,7 @@ RaspiCamControl.s: RaspiCamControl.c.s
 
 # target to generate assembly for a file
 RaspiCamControl.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiCamControl.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiCamControl.c.s
 .PHONY : RaspiCamControl.c.s
 
 RaspiPreview.o: RaspiPreview.c.o
@@ -164,7 +164,7 @@ RaspiPreview.o: RaspiPreview.c.o
 
 # target to build an object file
 RaspiPreview.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiPreview.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiPreview.c.o
 .PHONY : RaspiPreview.c.o
 
 RaspiPreview.i: RaspiPreview.c.i
@@ -172,7 +172,7 @@ RaspiPreview.i: RaspiPreview.c.i
 
 # target to preprocess a source file
 RaspiPreview.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiPreview.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiPreview.c.i
 .PHONY : RaspiPreview.c.i
 
 RaspiPreview.s: RaspiPreview.c.s
@@ -180,7 +180,7 @@ RaspiPreview.s: RaspiPreview.c.s
 
 # target to generate assembly for a file
 RaspiPreview.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiPreview.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiPreview.c.s
 .PHONY : RaspiPreview.c.s
 
 RaspiTex.o: RaspiTex.c.o
@@ -188,7 +188,7 @@ RaspiTex.o: RaspiTex.c.o
 
 # target to build an object file
 RaspiTex.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiTex.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiTex.c.o
 .PHONY : RaspiTex.c.o
 
 RaspiTex.i: RaspiTex.c.i
@@ -196,7 +196,7 @@ RaspiTex.i: RaspiTex.c.i
 
 # target to preprocess a source file
 RaspiTex.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiTex.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiTex.c.i
 .PHONY : RaspiTex.c.i
 
 RaspiTex.s: RaspiTex.c.s
@@ -204,7 +204,7 @@ RaspiTex.s: RaspiTex.c.s
 
 # target to generate assembly for a file
 RaspiTex.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiTex.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiTex.c.s
 .PHONY : RaspiTex.c.s
 
 RaspiTexUtil.o: RaspiTexUtil.c.o
@@ -212,7 +212,7 @@ RaspiTexUtil.o: RaspiTexUtil.c.o
 
 # target to build an object file
 RaspiTexUtil.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiTexUtil.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiTexUtil.c.o
 .PHONY : RaspiTexUtil.c.o
 
 RaspiTexUtil.i: RaspiTexUtil.c.i
@@ -220,7 +220,7 @@ RaspiTexUtil.i: RaspiTexUtil.c.i
 
 # target to preprocess a source file
 RaspiTexUtil.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiTexUtil.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiTexUtil.c.i
 .PHONY : RaspiTexUtil.c.i
 
 RaspiTexUtil.s: RaspiTexUtil.c.s
@@ -228,39 +228,39 @@ RaspiTexUtil.s: RaspiTexUtil.c.s
 
 # target to generate assembly for a file
 RaspiTexUtil.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/RaspiTexUtil.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/RaspiTexUtil.c.s
 .PHONY : RaspiTexUtil.c.s
 
-camcv1.o: camcv1.c.o
-.PHONY : camcv1.o
+camcv_vid1.o: camcv_vid1.cpp.o
+.PHONY : camcv_vid1.o
 
 # target to build an object file
-camcv1.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/camcv1.c.o
-.PHONY : camcv1.c.o
+camcv_vid1.cpp.o:
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/camcv_vid1.cpp.o
+.PHONY : camcv_vid1.cpp.o
 
-camcv1.i: camcv1.c.i
-.PHONY : camcv1.i
+camcv_vid1.i: camcv_vid1.cpp.i
+.PHONY : camcv_vid1.i
 
 # target to preprocess a source file
-camcv1.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/camcv1.c.i
-.PHONY : camcv1.c.i
+camcv_vid1.cpp.i:
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/camcv_vid1.cpp.i
+.PHONY : camcv_vid1.cpp.i
 
-camcv1.s: camcv1.c.s
-.PHONY : camcv1.s
+camcv_vid1.s: camcv_vid1.cpp.s
+.PHONY : camcv_vid1.s
 
 # target to generate assembly for a file
-camcv1.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/camcv1.c.s
-.PHONY : camcv1.c.s
+camcv_vid1.cpp.s:
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/camcv_vid1.cpp.s
+.PHONY : camcv_vid1.cpp.s
 
 gl_scenes/mirror.o: gl_scenes/mirror.c.o
 .PHONY : gl_scenes/mirror.o
 
 # target to build an object file
 gl_scenes/mirror.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/mirror.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/mirror.c.o
 .PHONY : gl_scenes/mirror.c.o
 
 gl_scenes/mirror.i: gl_scenes/mirror.c.i
@@ -268,7 +268,7 @@ gl_scenes/mirror.i: gl_scenes/mirror.c.i
 
 # target to preprocess a source file
 gl_scenes/mirror.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/mirror.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/mirror.c.i
 .PHONY : gl_scenes/mirror.c.i
 
 gl_scenes/mirror.s: gl_scenes/mirror.c.s
@@ -276,7 +276,7 @@ gl_scenes/mirror.s: gl_scenes/mirror.c.s
 
 # target to generate assembly for a file
 gl_scenes/mirror.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/mirror.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/mirror.c.s
 .PHONY : gl_scenes/mirror.c.s
 
 gl_scenes/models.o: gl_scenes/models.c.o
@@ -284,7 +284,7 @@ gl_scenes/models.o: gl_scenes/models.c.o
 
 # target to build an object file
 gl_scenes/models.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/models.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/models.c.o
 .PHONY : gl_scenes/models.c.o
 
 gl_scenes/models.i: gl_scenes/models.c.i
@@ -292,7 +292,7 @@ gl_scenes/models.i: gl_scenes/models.c.i
 
 # target to preprocess a source file
 gl_scenes/models.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/models.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/models.c.i
 .PHONY : gl_scenes/models.c.i
 
 gl_scenes/models.s: gl_scenes/models.c.s
@@ -300,7 +300,7 @@ gl_scenes/models.s: gl_scenes/models.c.s
 
 # target to generate assembly for a file
 gl_scenes/models.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/models.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/models.c.s
 .PHONY : gl_scenes/models.c.s
 
 gl_scenes/sobel.o: gl_scenes/sobel.c.o
@@ -308,7 +308,7 @@ gl_scenes/sobel.o: gl_scenes/sobel.c.o
 
 # target to build an object file
 gl_scenes/sobel.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/sobel.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/sobel.c.o
 .PHONY : gl_scenes/sobel.c.o
 
 gl_scenes/sobel.i: gl_scenes/sobel.c.i
@@ -316,7 +316,7 @@ gl_scenes/sobel.i: gl_scenes/sobel.c.i
 
 # target to preprocess a source file
 gl_scenes/sobel.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/sobel.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/sobel.c.i
 .PHONY : gl_scenes/sobel.c.i
 
 gl_scenes/sobel.s: gl_scenes/sobel.c.s
@@ -324,7 +324,7 @@ gl_scenes/sobel.s: gl_scenes/sobel.c.s
 
 # target to generate assembly for a file
 gl_scenes/sobel.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/sobel.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/sobel.c.s
 .PHONY : gl_scenes/sobel.c.s
 
 gl_scenes/square.o: gl_scenes/square.c.o
@@ -332,7 +332,7 @@ gl_scenes/square.o: gl_scenes/square.c.o
 
 # target to build an object file
 gl_scenes/square.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/square.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/square.c.o
 .PHONY : gl_scenes/square.c.o
 
 gl_scenes/square.i: gl_scenes/square.c.i
@@ -340,7 +340,7 @@ gl_scenes/square.i: gl_scenes/square.c.i
 
 # target to preprocess a source file
 gl_scenes/square.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/square.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/square.c.i
 .PHONY : gl_scenes/square.c.i
 
 gl_scenes/square.s: gl_scenes/square.c.s
@@ -348,7 +348,7 @@ gl_scenes/square.s: gl_scenes/square.c.s
 
 # target to generate assembly for a file
 gl_scenes/square.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/square.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/square.c.s
 .PHONY : gl_scenes/square.c.s
 
 gl_scenes/teapot.o: gl_scenes/teapot.c.o
@@ -356,7 +356,7 @@ gl_scenes/teapot.o: gl_scenes/teapot.c.o
 
 # target to build an object file
 gl_scenes/teapot.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/teapot.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/teapot.c.o
 .PHONY : gl_scenes/teapot.c.o
 
 gl_scenes/teapot.i: gl_scenes/teapot.c.i
@@ -364,7 +364,7 @@ gl_scenes/teapot.i: gl_scenes/teapot.c.i
 
 # target to preprocess a source file
 gl_scenes/teapot.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/teapot.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/teapot.c.i
 .PHONY : gl_scenes/teapot.c.i
 
 gl_scenes/teapot.s: gl_scenes/teapot.c.s
@@ -372,7 +372,7 @@ gl_scenes/teapot.s: gl_scenes/teapot.c.s
 
 # target to generate assembly for a file
 gl_scenes/teapot.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/teapot.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/teapot.c.s
 .PHONY : gl_scenes/teapot.c.s
 
 gl_scenes/yuv.o: gl_scenes/yuv.c.o
@@ -380,7 +380,7 @@ gl_scenes/yuv.o: gl_scenes/yuv.c.o
 
 # target to build an object file
 gl_scenes/yuv.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/yuv.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/yuv.c.o
 .PHONY : gl_scenes/yuv.c.o
 
 gl_scenes/yuv.i: gl_scenes/yuv.c.i
@@ -388,7 +388,7 @@ gl_scenes/yuv.i: gl_scenes/yuv.c.i
 
 # target to preprocess a source file
 gl_scenes/yuv.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/yuv.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/yuv.c.i
 .PHONY : gl_scenes/yuv.c.i
 
 gl_scenes/yuv.s: gl_scenes/yuv.c.s
@@ -396,7 +396,7 @@ gl_scenes/yuv.s: gl_scenes/yuv.c.s
 
 # target to generate assembly for a file
 gl_scenes/yuv.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/gl_scenes/yuv.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/gl_scenes/yuv.c.s
 .PHONY : gl_scenes/yuv.c.s
 
 tga.o: tga.c.o
@@ -404,7 +404,7 @@ tga.o: tga.c.o
 
 # target to build an object file
 tga.c.o:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/tga.c.o
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/tga.c.o
 .PHONY : tga.c.o
 
 tga.i: tga.c.i
@@ -412,7 +412,7 @@ tga.i: tga.c.i
 
 # target to preprocess a source file
 tga.c.i:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/tga.c.i
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/tga.c.i
 .PHONY : tga.c.i
 
 tga.s: tga.c.s
@@ -420,7 +420,7 @@ tga.s: tga.c.s
 
 # target to generate assembly for a file
 tga.c.s:
-	$(MAKE) -f CMakeFiles/camcv1.dir/build.make CMakeFiles/camcv1.dir/tga.c.s
+	$(MAKE) -f CMakeFiles/camcv_vid1.dir/build.make CMakeFiles/camcv_vid1.dir/tga.c.s
 .PHONY : tga.c.s
 
 # Help Target
@@ -429,7 +429,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... camcv1"
+	@echo "... camcv_vid1"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RaspiCLI.o"
@@ -447,9 +447,9 @@ help:
 	@echo "... RaspiTexUtil.o"
 	@echo "... RaspiTexUtil.i"
 	@echo "... RaspiTexUtil.s"
-	@echo "... camcv1.o"
-	@echo "... camcv1.i"
-	@echo "... camcv1.s"
+	@echo "... camcv_vid1.o"
+	@echo "... camcv_vid1.i"
+	@echo "... camcv_vid1.s"
 	@echo "... gl_scenes/mirror.o"
 	@echo "... gl_scenes/mirror.i"
 	@echo "... gl_scenes/mirror.s"

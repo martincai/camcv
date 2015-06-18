@@ -678,7 +678,10 @@ int main(int argc, const char **argv)
 	// Note : /!\ change with your opencv path	
 	//fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml";
 	// change fn_harr to be quicker LBP (see article)
-	fn_haar = "/usr/share/opencv/haarcascades/lbpcascade_frontalface.xml";
+	
+        // commented by mcai
+        //fn_haar = "/usr/share/opencv/haarcascades/lbpcascade_frontalface.xml";
+        fn_haar = "/usr/share/opencv/lbpcascades/lbpcascade_frontalface.xml";
 	DEBUG cout<<"(OK) csv="<<fn_csv<<"\n";
 	
     // Read in the data (fails if no valid input filename is given, but you'll get an error message):
