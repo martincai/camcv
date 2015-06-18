@@ -78,6 +78,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <semaphore.h>
 
+// *** PR : ADDED for OPENCV
+#include <cv.h>
+#include <highgui.h>
+
 // Standard port setting for the camera component
 #define MMAL_CAMERA_PREVIEW_PORT 0
 #define MMAL_CAMERA_VIDEO_PORT 1
@@ -269,9 +273,12 @@ static void default_status(RASPISTILL_STATE *state)
       return;
    }
 
-   state->timeout = 5000; // 5s delay before take image
-   state->width = 2592;
-   state->height = 1944;
+//   state->timeout = 5000; // 5s delay before take image
+   state->timeout = 1000; // 1s delay before take image
+//   state->width = 2592;
+   state->width = 320;
+//   state->height = 1944;
+   state->height = 200;
    state->quality = 85;
    state->wantRAW = 0;
    state->filename = NULL;
@@ -788,6 +795,8 @@ static void encoder_buffer_callback(MMAL_PORT_T *port, MMAL_BUFFER_HEADER_T *buf
 
    PORT_USERDATA *pData = (PORT_USERDATA *)port->userdata;
 
+   printf("i am here!\n");
+   
    if (pData)
    {
       int bytes_written = buffer->length;
@@ -796,8 +805,24 @@ static void encoder_buffer_callback(MMAL_PORT_T *port, MMAL_BUFFER_HEADER_T *buf
       {
          mmal_buffer_header_mem_lock(buffer);
 
+         //
+         // *** PR : OPENCV Stuff here !
+         //
+         // create a CvMat empty structure, with size of the buffer. 
+         CvMat* buf = cvCreateMat(1,buffer->length,CV_8UC1);
+         // copy buffer from cam to CvMat
+         buf->data.ptr = buffer->data;
+         // decode image (interpret jpg)
+         IplImage *img = cvDecodeImage(buf, CV_LOAD_IMAGE_COLOR);
+         // we can save it !
+         cvSaveImage("foobar.bmp", img, 0);
+         // or display it 
+         cvNamedWindow("camcvWin", CV_WINDOW_AUTOSIZE); 
+         cvShowImage("camcvWin", img );
+         cvWaitKey(0);
+         
          bytes_written = fwrite(buffer->data, 1, buffer->length, pData->file_handle);
-
+         
          mmal_buffer_header_mem_unlock(buffer);
       }
 
@@ -1723,7 +1748,10 @@ int main(int argc, const char **argv)
       if (state.verbose)
          fprintf(stderr, "Starting component connection stage\n");
 
+      // *** PR : we don't want preview
       camera_preview_port = state.camera_component->output[MMAL_CAMERA_PREVIEW_PORT];
+      //camera_preview_port = NULL;
+      
       camera_video_port   = state.camera_component->output[MMAL_CAMERA_VIDEO_PORT];
       camera_still_port   = state.camera_component->output[MMAL_CAMERA_CAPTURE_PORT];
       encoder_input_port  = state.encoder_component->input[0];
@@ -1739,6 +1767,7 @@ int main(int argc, const char **argv)
          preview_input_port  = state.preview_parameters.preview_component->input[0];
 
          // Connect camera to preview (which might be a null_sink if no preview required)
+         // PR : we don't want preview
          status = connect_ports(camera_preview_port, preview_input_port, &state.preview_connection);
       }
 
@@ -1997,6 +2026,7 @@ error:
       check_disable_port(camera_video_port);
       check_disable_port(encoder_output_port);
 
+      // PR : we don't want preview
       if (state.preview_connection)
          mmal_connection_destroy(state.preview_connection);
 

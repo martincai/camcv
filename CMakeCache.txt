@@ -116,7 +116,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=camcv
+CMAKE_PROJECT_NAME:STATIC=camcv1
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -173,10 +173,34 @@ OpenCV_LIB_DIR_DBG:PATH=/usr/lib
 OpenCV_LIB_DIR_OPT:PATH=/usr/lib
 
 //Value Computed by CMake
+camcv1_BINARY_DIR:STATIC=/home/pi/camcv
+
+//Value Computed by CMake
+camcv1_SOURCE_DIR:STATIC=/home/pi/camcv
+
+//Value Computed by CMake
+camcv2_BINARY_DIR:STATIC=/home/pi/camcv
+
+//Value Computed by CMake
+camcv2_SOURCE_DIR:STATIC=/home/pi/camcv
+
+//Value Computed by CMake
 camcv_BINARY_DIR:STATIC=/home/pi/camcv
 
 //Value Computed by CMake
 camcv_SOURCE_DIR:STATIC=/home/pi/camcv
+
+//Value Computed by CMake
+camcv_vid0_BINARY_DIR:STATIC=/home/pi/camcv
+
+//Value Computed by CMake
+camcv_vid0_SOURCE_DIR:STATIC=/home/pi/camcv
+
+//Value Computed by CMake
+camcv_vid1_BINARY_DIR:STATIC=/home/pi/camcv
+
+//Value Computed by CMake
+camcv_vid1_SOURCE_DIR:STATIC=/home/pi/camcv
 
 
 ########################

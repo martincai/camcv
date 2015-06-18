@@ -15,3 +15,4 @@ include_directories(./gl_scenes)
 include_directories(.)
 add_executable(camcv RaspiCamControl.c RaspiCLI.c RaspiPreview.c camcv.c RaspiTex.c RaspiTexUtil.c tga.c gl_scenes/teapot.c gl_scenes/models.c gl_scenes/square.c gl_scenes/mirror.c gl_scenes/yuv.c gl_scenes/sobel.c)
 target_link_libraries(camcv /opt/vc/lib/libmmal_core.so /opt/vc/lib/libmmal_util.so /opt/vc/lib/libmmal_vc_client.so /opt/vc/lib/libvcos.so /opt/vc/lib/libbcm_host.so /opt/vc/lib/libGLESv2.so /opt/vc/lib/libEGL.so /home/pi/libfacerec-0.04/libopencv_facerec.a ${OpenCV_LIBS} pthread -lm)
+
